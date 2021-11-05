@@ -3,7 +3,6 @@
 
 ```sh
 npm i
-cordova platform add browser
 cordova build browser
 ```
 
@@ -12,7 +11,7 @@ cordova build browser
     - plugins utilisès :
     - caméra
     - géolocalisation
-    - position du téléphone (pas testé)
+    - position du téléphone (screen position) (pas testé)
 - PWA fonctionnelle
 - l'application corespond à l'énoncé de cration de tops et est fonctionelle
 - Page offline désigné grâce à la mise en cache par le SW
