@@ -2,9 +2,15 @@
 ## install
 
 ```sh
+git clone git@github.com:Axel-AMGHAR/YNOV.git
+git checkout DevWebMobile
+cd YNOV/DevWebMobile/Tops/
 npm i
 cordova build browser
 ```
+
+[http://localhost:8000](http://localhost:8000)
+
 
 ## Done
 - Utilisation de cordova, l'application est utilisable sur la platforme browser
