@@ -1,0 +1,94 @@
+[{
+    "title": "Mangas",
+    "icon": "dragon",
+    "list": [{
+            "name": "One piece",
+            "description": "One Piece (ワンピース, Wan Pīsu?) est une série de mangas shōnen créée par Eiichirō Oda. Elle est prépubliée depuis le 22 juillet 1997 dans le magazine hebdomadaire Weekly Shōnen Jump.... ",
+            "img": "https://image.animedigitalnetwork.fr/license/onepiece/tv/web/affiche_370x0.jpg",
+            "link": "https://fr.wikipedia.org/wiki/One_Piece"
+        },
+        {
+            "name": "Hunter × Hunter",
+            "description": "Hunter × Hunter est un shōnen manga écrit et dessiné par Yoshihiro Togashi. Il est pré-publié depuis mars 1998 dans l'hebdomadaire Weekly Shōnen Jump de l'éditeur Shūeisha, et a été compilé en trente-six tomes au 4 octobre 2018...",
+            "img": "img/mangas/hunterhunter.jpg",
+            "link": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiD87zRibnzAhXvBmMBHTY4DM0QmhN6BAhDEAI&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FHunter_%25C3%2597_Hunter&usg=AOvVaw3T0sTBH9dQQJniRHVPWDlG"
+        },
+        {
+            "name": "Fullmetal Alchemist",
+            "description": "Fullmetal Alchemist, est un manga d'Hiromu Arakawa. Il a été prépublié entre 2001 et 2010 dans le magazine mensuel Shōnen Gangan de la société Square Enix et a été compilé en 27 volumes reliés. La version française est publiée par Kurokawa depuis 2005...",
+            "img": "img/mangas/fullmetalalchemist.jpg",
+            "link": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjwxdeTirnzAhVT8uAKHaB0D0MQmhN6BAg7EAI&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FFullmetal_Alchemist&usg=AOvVaw3zkIYNjHSncaMnemB-WIqH"
+        },
+        {
+            "name": "L'Attaque des Titans",
+            "description": "L’Attaque des Titans est un shōnen manga écrit et dessiné par Hajime Isayama. Il est prépublié entre septembre 2009 et avril 2021 dans le magazine Bessatsu Shōnen Magazine puis compilé en trente-quatre volumes reliés par l’éditeur Kōdansha...",
+            "img": "img/mangas/lattaquedestitans.jpg",
+            "link": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjmwozJirnzAhWTmhQKHROyDS0QmhN6BAg_EAI&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FL%2527Attaque_des_Titans&usg=AOvVaw2-X5Uu_7ImQJfHheCtCEpw"
+        },
+        {
+            "name": "Fate/stay night : Unlimited Blade Works",
+            "description": "Un groupe de sept mages est choisi pour devenir les maîtres de sept classes d'esprits héroïques, afin de combattre et de gagner le Saint Graal...",
+            "img": "img/mangas/fatestaynight.jpg",
+            "link": "https://en.wikipedia.org/wiki/Fate/stay_night:_Unlimited_Blade_Works_(TV_series)"
+        }
+    ]
+},
+{
+    "title": "Series",
+    "icon": "video",
+    "list": [{
+            "name": "The Walking Dead ",
+            "description": "The Walking DeadNote 1 est une série télévisée d'horreur et dramatique américaine, adaptée par Frank Darabont et Robert Kirkman, créateur de la bande dessinée du même nom, aux États-Unis diffusée depuis le 31 octobre 2010 sur AMC1.",
+            "img": "img/mangas/onepiece.jpg",
+            "link": "https://fr.wikipedia.org/wiki/The_Walking_Dead_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)"
+        },
+        {
+            "name": "Breaking Bad",
+            "description": "Breaking Bad, ou Breaking Bad : Le Chimiste1 au Québec, est une série télévisée américaine en 62 épisodes de 47 minutes, créée par Vince Gilligan, diffusée simultanément du 20 janvier 2008 au 29 septembre 2013 sur AMC aux États-Unis et au Canada, et ensuite sur Netflix.",
+            "img": "img/mangas/hunterhunter.jpg",
+            "link": "https://fr.wikipedia.org/wiki/Breaking_Bad"
+        },
+        {
+            "name": "Prison Break",
+            "description": "Prison Break ou La Grande Évasion au Québec est un feuilleton télévisé américain en 90 épisodes de 43 minutes créé par Paul Scheuring et diffusé sur le réseau Fox entre le 29 août 2005 et 15 mai 2009. Le feuilleton revient pour une cinquième saison sous la forme d'une minisérie de neuf épisodes, intitulée Prison Break: Resurrection1,2, diffusée entre le 4 avril 20173,4,5,6,7 et le 30 mai 2017 aux États-Unis.",
+            "img": "img/mangas/fullmetalalchemist.jpg",
+            "link": "https://fr.wikipedia.org/wiki/Prison_Break"
+        },
+        {
+            "name": "GOT",
+            "description": "Il y a très longtemps, à une époque oubliée, une force a détruit l'équilibre des saisons. Dans un pays où l'été peut durer plusieurs années et l'hiver toute une vie, des forces sinistres et surnaturelles se pressent aux portes du Royaume des Sept Couronnes. La confrérie de la Garde de Nuit, protégeant le royaume de toute créature",
+            "img": "img/mangas/onepiece.jpg",
+            "link": "https://gameofthrones.fandom.com/fr/wiki/Wiki_Game_of_Thrones"
+        }
+    ]
+},
+{
+    "title": "Movies",
+    "icon": "film",
+    "list": [
+        {
+            "name": "Star Wars",
+            "description": "our Luke et Ben Skywalker, ce qui avait commencé comme une quête de la vérité s'est transformé en lutte pour la survie. Et contre toute attente, ils forment désormais une alliance avec une flotte du Côté Obscur. Les circonstances l'exigent : le mal que Jedi et Sith affrontent est des plus anciens et des plus dangereux.",
+            "img": "img/mangas/hunterhunter.jpg",
+            "link": "https://starwars.fandom.com/fr/wiki/Accueil"
+        },
+        {
+            "name": "Harry Potter",
+            "description": "Harry Potter [ʔaʁi pɔtœʁ]a (en anglais : [ˈhæɹi ˈpɒtə]b) est une série littéraire de low fantasy écrite par l'auteure britannique J. K. Rowling, dont la suite romanesque s'est achevée en 2007. Une pièce de théâtre, considérée comme la « huitième histoire » officielle, a été jouée et publiée en 2016. Les livres et le script de la pièce ont été traduits en français par Jean-François Ménard.",
+            "img": "img/mangas/fullmetalalchemist.jpg",
+            "link": "https://harrypotter.fandom.com/fr/wiki/Wiki_Harry_Potter"
+        },
+        {
+            "name": "Avengers",
+            "description": "Avengers ou Les Avengers : Le film au Québec et au Nouveau-Brunswick (Marvel's The Avengers) est un film de super-héros américain coécrit et réalisé par Joss Whedon, sorti en 2012. Il se base sur l'équipe de super-héros du même nom (Les Vengeurs en français) apparaissant dans le comic book publié par Marvel Comics. Sixième film de l'univers cinématographique Marvel, il clôt la phase I.",
+            "img": "img/mangas/fullmetalalchemist.jpg",
+            "link": "https://fr.wikipedia.org/w/index.php?search=Avengers&title=Sp%C3%A9cial:Recherche&profile=advanced&fulltext=1&ns0=1"
+        },
+        {
+            "name": "Jurassic Park",
+            "description": "Jurassic Park ou Le Parc jurassique au Québec est un film américain réalisé par Steven Spielberg, sorti en 1993. Adapté du roman de Michael Crichton publié en 1990, le film met en scène un parc d'attractions et animalier sur une île fictive nommée Isla Nublar située dans l'océan Pacifique, au large du Costa Rica. ",
+            "img": "img/mangas/fullmetalalchemist.jpg",
+            "link": "https://fr.wikipedia.org/wiki/Jurassic_Park"
+        }
+    ]
+}]

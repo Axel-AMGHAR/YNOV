@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html data-theme="halloween">
+
+<head>
+    <meta charset="utf-8">
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <!-- <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- CORDOVA + SW -->
+    <script>
+        window.addEventListener("load", () => {
+
+            if ("cordova" in window) {} else {
+                if ("serviceWorker" in navigator) {
+                    navigator.serviceWorker
+                        .register("sw.js", {
+                            scope: "./"
+                        })
+                        .then(function (reg) {});
+                }
+                var OneSignal = window.OneSignal || [];
+                var initConfig = {
+                    appId: "7d02237e-44e7-444d-a6b8-b6faee72698b",
+                    notifyButton: {
+                        enable: true,
+                    },
+                };
+                OneSignal.push(function () {
+                    OneSignal.SERVICE_WORKER_PARAM = {
+                        scope: "push/onesignal/"
+                    };
+                    OneSignal.SERVICE_WORKER_PATH =
+                        "push/onesignal/OneSignalSDKWorker.js";
+                    OneSignal.SERVICE_WORKER_UPDATER_PATH =
+                        "push/onesignal/OneSignalSDKUpdaterWorker.js";
+                    OneSignal.init(initConfig);
+                });
+            }
+        });
+    </script>
+
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <!-- <meta name="color-scheme" content="light dark"> -->
+
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/compiled.css">
+
+    <!-- Vue -->
+    <script type="text/javascript" src="js/vue/vue.min.js"></script>
+    <script type="text/javascript" src="js/vue/vue-router.js"></script>
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/9ce41bd472.js" crossorigin="anonymous"></script>
+
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+        integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>TOPS</title>
+</head>
+
+<body>
+    <!-- <div class="app">
+        <h1>Apache Cordova</h1>
+        <div id="deviceready" class="blink">
+            <p class="event listening">Connecting to Device</p>
+            <p class="event received">Device is Ready</p>
+        </div>
+    </div> -->
+
+    <div id="vue">
+
+        <div class="navbar mb-2 shadow-lg bg-neutral flex flex-col md:flex-row">
+            <div class="justify-start">
+                <div class="px-2 mx-2 flex-none">
+                    <span class="text-lg font-bold text-primary">
+                        <i class="fas fa-broom"></i>
+                        MENU
+                    </span>
+                </div>
+            </div>
+            <div class="justify-center">
+                <div class="px-2 mx-2 lg:flex items-stretch">
+                    <router-link to="/" class="btn btn-ghost btn-sm rounded-btn text-neutral-content">Accueil
+                    </router-link>
+                    <router-link to="/creation" class="btn btn-ghost btn-sm rounded-btn text-neutral-content">
+                        Creation
+                        d'un top</router-link>
+                    <router-link to="/plugins" class="btn btn-ghost btn-sm rounded-btn text-neutral-content">
+                        Utilisation des plugins</router-link>
+                </div>
+            </div>
+            <div class="justify-end">
+                <select class="select select-bordered select-sm select-primary w-48" v-model="selectedTheme">
+                    <option v-for="theme of themes" :value="theme">
+                        Theme {{ theme }}
+                    </option>
+                </select>
+            </div>
+        </div>
+
+        <div class="text-center container m-auto">
+            <router-view class="m-8"></router-view>
+        </div>
+
+        <div class="fixed right-10 bottom-10">
+            <router-link to="/creation"
+                class="btn border-2 border-base-100 btn-secondary btn-circle btn-sm md:btn-md lg:btn-lg xl:btn-xl">
+                <i class="fas fa-plus w-32"></i>
+        </div>
+
+    </div>
+
+    <script src="js/vue/home.vue.js"></script>
+    <script src="js/vue/list.vue.js"></script>
+    <script src="js/vue/creation.vue.js"></script>
+    <script src="js/vue/plugins.vue.js"></script>
+
+    <script>
+        var routes = [{
+                path: '/',
+                component: Home
+            },
+            {
+                path: '/list/:topTitle',
+                component: List,
+                name: 'list',
+            },
+            {
+                path: '/creation',
+                component: Creation
+            },
+            {
+                path: '/plugins',
+                component: Plugins
+            },
+        ];
+
+        var router = new VueRouter({
+            routes: routes,
+            mode: 'history',
+            base: '/'
+        });
+
+        var app = new Vue({
+            el: '#vue',
+            router: router,
+            data() {
+                return {
+                    themes: ['light', 'dark', 'cupcake', 'bumblebee', 'emerald', 'corporate', 'synthwave',
+                        'retro', 'cyberpunk',
+                        'cyberpunk', 'valentine', 'halloween', 'garden', 'forest', 'aqua', 'lofi', 'pastel',
+                        'fantasy', 'wireframe',
+                        'black', 'luxury', 'dracula', 'cmyk'
+                    ],
+                    selectedTheme: 'halloween'
+                }
+            },
+            watch: {
+                selectedTheme(newSelected) {
+                    document.getElementsByTagName('html')[0].setAttribute('data-theme', newSelected)
+                }
+            }
+        })
+    </script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/native.js"></script>
+
+</body>
+
+</html>
